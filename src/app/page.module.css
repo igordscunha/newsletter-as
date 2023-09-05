@@ -1,0 +1,127 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(/revolucao_russa.jpeg); */
+  background-color: #606C5D;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: #F6F4EB;
+  padding: 35px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  gap: 12px;
+}
+
+.container form input{
+ height: 25px;
+ padding: 5px;
+ background-color: transparent;
+ outline: none;
+ border: none;
+ width: 100%;
+}
+
+.inputz{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  padding: 4px 12px;
+  border: 2px solid rgba(158, 156, 156, 0.675);
+  border-radius: 8px;
+}
+
+.inputzin{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.container p {
+  width: 80%;
+  font-weight: 400;
+  font-family: 'Arial';
+}
+
+.container h2{
+  padding-bottom: 25px;
+}
+
+.container form button{
+  padding: 6px 18px;
+  margin-top: 8px;
+  background-color: rgba(243, 6, 6, 0.863);
+  border-style: hidden;
+  font-size: 22px;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.container form button:hover{
+  background-color: rgba(243, 6, 6, 0.916);  
+}
+
+.container form button:active{
+  background-image: linear-gradient(to bottom, rgba(243, 6, 6, 0.799), rgba(243, 6, 6, 0.799), rgba(243, 6, 6, 0.799), black);
+}
+
+.imagem{
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  opacity: 90%;
+}
+
+.mensagemexito{
+
+  font-style: italic;
+  font-weight: 100;
+  width: 80%;
+  font-size: 0.85rem;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 820px){
+  .inputz{
+    width: 100%;
+  }
+
+  .container form button{
+    font-size: 0.75rem;
+  }
+
+  .container h2 {
+    font-size: 1.1rem;
+  }
+
+  .container p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .container{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40%;
+  }
+}
