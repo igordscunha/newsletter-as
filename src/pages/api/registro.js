@@ -13,7 +13,7 @@ export default async function handler(req, res) {
       res.status(201).json({ message: 'Tudo certo' })
       await leadCadastrado.save()
       sendGridMail.setApiKey(process.env.SENDGRID_KEY)
-      sendGridMail.send({
+      await sendGridMail.send({
         from: 'hugo@pontesebritto.adv.br',
         to: leadCadastrado.email,
         subject: 'Seja bem vindx, Companheirx!',
