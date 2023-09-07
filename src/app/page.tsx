@@ -28,12 +28,12 @@ export default function Home() {
   
 
   const aoSubmit = async (evento: React.FormEvent<HTMLFormElement>) => {
-    setMostrarMensagemExito(true)
     evento.preventDefault()
-
+    
     axios.post('/api/registro', ({ nome, email }))
-      .then(() => {
+    .then(() => {
         alert('Cadastrado com sucesso!')
+        setMostrarMensagemExito(true)
       })
       .catch((err) => {
         console.log(err)
