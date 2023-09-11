@@ -38,7 +38,7 @@ export default async function handler(req, res) {
     try {
       const leadsCadastrados = await Leads.find()
       const totalLeads = leadsCadastrados.length
-      res.status(200).json({ totalLeads, leadsCadastrados })
+      res.status(200).json({ totalLeads })
     }
     catch (error) {
       res.status(400).json({ error: 'Alguma coisa deu errado na requisição GET...' })
